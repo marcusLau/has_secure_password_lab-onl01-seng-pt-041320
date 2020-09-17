@@ -1,0 +1,14 @@
+<h2>New User Form</h2>
+
+<%= form_for :user, url: '/signup' do |s| %>
+    <%= s.label :name %>
+    <%= s.text_field :name %><br>
+
+    <%= s.label :password%>
+    <%= s.password_field :password %><br>
+
+    <%= s.label :password_confirmation %>
+    <%= s.password_field :password_confirmation %><br>
+    
+    <%= s.submit %>
+<% end %>
